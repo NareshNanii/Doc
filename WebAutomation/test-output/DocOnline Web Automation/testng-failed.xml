@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DocOnline Web Automation]">
+  <test name="DocOnline Web Automation - Test(failed)">
+    <classes>
+      <class name="Scenario_Component.Scenario_ForgotPassword">
+        <methods>
+          <include name="Report_extent"/>
+          <include name="quit_execution"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_ForgotPassword -->
+      <class name="Scenario_Component.Scenario_BookConsultation_Functionality">
+        <methods>
+          <include name="testUser_BookConsultation_schedule_audio_allow_doctor" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_video_allowdoctor" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_video_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_video_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_lang_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_allow_doctor" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_uploadfile" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_allow_doctor_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_allow_doctor" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_allow_doctor" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_video_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_video_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_video_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_allow_doctor_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_lang_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_schedule_audio_telephone_lang_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_audio_telephone_lang_file" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_video_allow_doctor_file_note" invocation-numbers="0"/>
+          <include name="testUser_BookConsultation_waiting_video_allow_doctor" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_BookConsultation_Functionality -->
+      <class name="Scenario_Component.Scenario_Login">
+        <methods>
+          <include name="testUser_Login3_Valid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Login -->
+    </classes>
+  </test> <!-- DocOnline Web Automation - Test(failed) -->
+</suite> <!-- Failed suite [DocOnline Web Automation] -->

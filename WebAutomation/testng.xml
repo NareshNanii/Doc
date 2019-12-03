@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DocOnline Web Automation ">
+  <test thread-count="5" name="DocOnline Web Automation  Test Suit">
+    <classes>
+      <class name="Scenario_Component.Scenario_Login"/>
+      <class name="Scenario_Component.Scenario_BookConsultation"/>
+      <class name="Scenario_Component.Scenario_Dashboard"/>
+      <class name="Scenario_Component.Scenario_CheckURLs"/>
+      <class name="Scenario_Component.Scenario_ForgotPassword"/>
+      <class name="Scenario_Component.Scenario_BookConsultation_Functionality"/>
+    </classes>
+  </test> <!-- DocOnline Web Automation  Test Suit -->
+</suite> <!-- DocOnline Web Automation  -->

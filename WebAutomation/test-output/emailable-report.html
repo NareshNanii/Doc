@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">DocOnline Web Automation  Test Suit</td><td class="numi">87</td><td class="numi">87</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">10,922.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">DocOnline Web Automation  Test Suit &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Scenario_Component.Scenario_Login</td><td><a href="#m1"><b>testUser_Login3_Valid</b> (smoke) </a></td><td class="numi">1</td><td>1555999754730</td><td class="numi">28810</td></tr>
+<tr><th colspan="4">DocOnline Web Automation  Test Suit &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="12">Scenario_Component.Scenario_Login</td><td><a href="#m2"><b>testUser_Login_UI</b> (smoke) </a></td><td class="numi">1</td><td>1555999689463</td><td class="numi">13867</td></tr><tr class="passedodd"><td><a href="#m3"><b>testUser_Login1_Valid</b> (smoke) </a></td><td class="numi">1</td><td>1555999703358</td><td class="numi">15579</td></tr><tr class="passedodd"><td><a href="#m4"><b>testUser_Login2_Valid</b> (smoke) </a></td><td class="numi">1</td><td>1555999718962</td><td class="numi">35715</td></tr><tr class="passedodd"><td><a href="#m5"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m6"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m7"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m8"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m9"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m10"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m11"><b>testUser_Login_InValid</b> (smoke) </a></td><td class="numi">7</td><td>1555999783562</td><td class="numi">177960</td></tr><tr class="passedodd"><td><a href="#m12"><b>testUser_page_title</b> (smoke) </a></td><td class="numi">1</td><td>1555999961685</td><td class="numi">38710</td></tr><tr class="passedodd"><td><a href="#m13"><b>InvalidUN_Emptypassword</b> (smoke) </a></td><td class="numi">1</td><td>1556000000578</td><td class="numi">19209</td></tr>
+<tr class="passedeven"><td rowspan="1">Scenario_Component.Scenario_BookConsultation</td><td><a href="#m14"><b>testUser_BookConsultation_UI</b> (smoke) </a></td><td class="numi">1</td><td>1556000019806</td><td class="numi">71139</td></tr>
+<tr class="passedodd"><td rowspan="1">Scenario_Component.Scenario_Dashboard</td><td><a href="#m15"><b>testUser_Dashboard_UI</b> (smoke) </a></td><td class="numi">1</td><td>1556000090989</td><td class="numi">71495</td></tr>
+<tr class="passedeven"><td rowspan="1">Scenario_Component.Scenario_CheckURLs</td><td><a href="#m16"><b>testurl_User</b> (smoke) </a></td><td class="numi">1</td><td>1556000162493</td><td class="numi">40417</td></tr>
+<tr class="passedodd"><td rowspan="72">Scenario_Component.Scenario_BookConsultation_Functionality</td><td><a href="#m17"><b>testUser_BookConsultation_Functionality</b> (smoke) </a></td><td class="numi">1</td><td>1556000202931</td><td class="numi">86344</td></tr><tr class="passedodd"><td><a href="#m18"><b>testUser_BookConsultation_waitingtime</b> (smoke) </a></td><td class="numi">1</td><td>1556000289427</td><td class="numi">84710</td></tr><tr class="passedodd"><td><a href="#m19"><b>testUser_BookConsultation_waitingtime_notes</b> (smoke) </a></td><td class="numi">1</td><td>1556000374217</td><td class="numi">86817</td></tr><tr class="passedodd"><td><a href="#m20"><b>testUser_BookConsultation_schedule</b> (smoke) </a></td><td class="numi">1</td><td>1556000461121</td><td class="numi">97804</td></tr><tr class="passedodd"><td><a href="#m21"><b>testUser_BookConsultation_uploadfile</b> (smoke) </a></td><td class="numi">1</td><td>1556000558976</td><td class="numi">98132</td></tr><tr class="passedodd"><td><a href="#m22"><b>testUser_BookConsultation_waitingtime_upload</b> (smoke) </a></td><td class="numi">1</td><td>1556000657133</td><td class="numi">93539</td></tr><tr class="passedodd"><td><a href="#m23"><b>testUser_BookConsultation_schedule_note_upload</b> (smoke) </a></td><td class="numi">1</td><td>1556000750693</td><td class="numi">104693</td></tr><tr class="passedodd"><td><a href="#m24"><b>testUser_BookConsultation_waitingtime_note_upload</b> (smoke) </a></td><td class="numi">1</td><td>1556000855416</td><td class="numi">106563</td></tr><tr class="passedodd"><td><a href="#m25"><b>testUser_BookConsultation_schedule_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556000961996</td><td class="numi">112321</td></tr><tr class="passedodd"><td><a href="#m26"><b>testUser_BookConsultation_waiting_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001074400</td><td class="numi">112492</td></tr><tr class="passedodd"><td><a href="#m27"><b>testUser_BookConsultation_schedule_note_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001186914</td><td class="numi">124206</td></tr><tr class="passedodd"><td><a href="#m28"><b>testUser_BookConsultation_waiting_note_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001311197</td><td class="numi">123108</td></tr><tr class="passedodd"><td><a href="#m29"><b>testUser_BookConsultation_schedule_file_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001434366</td><td class="numi">119521</td></tr><tr class="passedodd"><td><a href="#m30"><b>testUser_BookConsultation_waiting_file_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001553911</td><td class="numi">121981</td></tr><tr class="passedodd"><td><a href="#m31"><b>testUser_BookConsultation_schedule_file_note_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001675913</td><td class="numi">125870</td></tr><tr class="passedodd"><td><a href="#m32"><b>testUser_BookConsultation_waiting_note_file_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001801863</td><td class="numi">129973</td></tr><tr class="passedodd"><td><a href="#m33"><b>testUser_BookConsultation_schedule_telephone_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556001931867</td><td class="numi">132926</td></tr><tr class="passedodd"><td><a href="#m34"><b>testUser_BookConsultation_waiting_telephone_audio</b> (smoke) </a></td><td class="numi">1</td><td>1556002064810</td><td class="numi">122170</td></tr><tr class="passedodd"><td><a href="#m35"><b>testUser_BookConsultation_schedule_telephone_audio_notes</b> (smoke) </a></td><td class="numi">1</td><td>1556002187027</td><td class="numi">130409</td></tr><tr class="passedodd"><td><a href="#m36"><b>testUser_BookConsultation_waiting_telephone_audio_Notes</b> (smoke) </a></td><td class="numi">1</td><td>1556002317462</td><td class="numi">136116</td></tr><tr class="passedodd"><td><a href="#m37"><b>testUser_BookConsultation_schedule_telephone_audio_upload</b> (smoke) </a></td><td class="numi">1</td><td>1556002453602</td><td class="numi">123301</td></tr><tr class="passedodd"><td><a href="#m38"><b>testUser_BookConsultation_waiting_telephone_audio_File</b> (smoke) </a></td><td class="numi">1</td><td>1556002576949</td><td class="numi">127575</td></tr><tr class="passedodd"><td><a href="#m39"><b>testUser_BookConsultation_schedule_telephone_audio_upload_notes</b> (smoke) </a></td><td class="numi">1</td><td>1556002704556</td><td class="numi">138329</td></tr><tr class="passedodd"><td><a href="#m40"><b>testUser_BookConsultation_waiting_telephone_audio_File_Note</b> (smoke) </a></td><td class="numi">1</td><td>1556002842912</td><td class="numi">149682</td></tr><tr class="passedodd"><td><a href="#m41"><b>testUser_BookConsultation_schedule_video_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556002992759</td><td class="numi">142653</td></tr><tr class="passedodd"><td><a href="#m42"><b>testUser_BookConsultation_waiting_video_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556003135443</td><td class="numi">135614</td></tr><tr class="passedodd"><td><a href="#m43"><b>testUser_BookConsultation_schedule_video_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556003271081</td><td class="numi">152135</td></tr><tr class="passedodd"><td><a href="#m44"><b>testUser_BookConsultation_waiting_video_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556003423234</td><td class="numi">144741</td></tr><tr class="passedodd"><td><a href="#m45"><b>testUser_BookConsultation_schedule_video_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556003568017</td><td class="numi">151590</td></tr><tr class="passedodd"><td><a href="#m46"><b>testUser_BookConsultation_waiting_video_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556003719641</td><td class="numi">140417</td></tr><tr class="passedodd"><td><a href="#m47"><b>testUser_BookConsultation_schedule_video_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556003860157</td><td class="numi">157813</td></tr><tr class="passedodd"><td><a href="#m48"><b>testUser_BookConsultation_waiting_video_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556004018031</td><td class="numi">153081</td></tr><tr class="passedodd"><td><a href="#m49"><b>testUser_BookConsultation_schedule_audio_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556004171146</td><td class="numi">156731</td></tr><tr class="passedodd"><td><a href="#m50"><b>testUser_BookConsultation_waiting_audio_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556004327909</td><td class="numi">145048</td></tr><tr class="passedodd"><td><a href="#m51"><b>testUser_BookConsultation_schedule_audio_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556004472977</td><td class="numi">163796</td></tr><tr class="passedodd"><td><a href="#m52"><b>testUser_BookConsultation_waiting_audio_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556004636798</td><td class="numi">167999</td></tr><tr class="passedodd"><td><a href="#m53"><b>testUser_BookConsultation_schedule_audio_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556004804822</td><td class="numi">145911</td></tr><tr class="passedodd"><td><a href="#m54"><b>testUser_BookConsultation_waiting_audio_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556004950778</td><td class="numi">153259</td></tr><tr class="passedodd"><td><a href="#m55"><b>testUser_BookConsultation_schedule_audio_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556005104123</td><td class="numi">199550</td></tr><tr class="passedodd"><td><a href="#m56"><b>testUser_BookConsultation_waiting_audio_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556005303769</td><td class="numi">164987</td></tr><tr class="passedodd"><td><a href="#m57"><b>testUser_BookConsultation_schedule_audio_telephone_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556005468792</td><td class="numi">157029</td></tr><tr class="passedodd"><td><a href="#m58"><b>testUser_BookConsultation_waiting_audio_telephone_lang</b> (smoke) </a></td><td class="numi">1</td><td>1556005625909</td><td class="numi">153754</td></tr><tr class="passedodd"><td><a href="#m59"><b>testUser_BookConsultation_schedule_audio_telephone_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556005779728</td><td class="numi">170537</td></tr><tr class="passedodd"><td><a href="#m60"><b>testUser_BookConsultation_waiting_audio_telephone_lang_note</b> (smoke) </a></td><td class="numi">1</td><td>1556005950375</td><td class="numi">173469</td></tr><tr class="passedodd"><td><a href="#m61"><b>testUser_BookConsultation_schedule_audio_telephone_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556006123865</td><td class="numi">158983</td></tr><tr class="passedodd"><td><a href="#m62"><b>testUser_BookConsultation_waiting_audio_telephone_lang_file</b> (smoke) </a></td><td class="numi">1</td><td>1556006282882</td><td class="numi">149814</td></tr><tr class="passedodd"><td><a href="#m63"><b>testUser_BookConsultation_schedule_audio_telephone_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556006432806</td><td class="numi">183073</td></tr><tr class="passedodd"><td><a href="#m64"><b>testUser_BookConsultation_waiting_audio_telephone_lang_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556006615903</td><td class="numi">173544</td></tr><tr class="passedodd"><td><a href="#m65"><b>testUser_BookConsultation_schedule_video_allowdoctor</b> (smoke) </a></td><td class="numi">1</td><td>1556006789486</td><td class="numi">156683</td></tr><tr class="passedodd"><td><a href="#m66"><b>testUser_BookConsultation_waiting_video_allow_doctor</b> (smoke) </a></td><td class="numi">1</td><td>1556006946253</td><td class="numi">162924</td></tr><tr class="passedodd"><td><a href="#m67"><b>testUser_BookConsultation_schedule_video_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556007109207</td><td class="numi">184964</td></tr><tr class="passedodd"><td><a href="#m68"><b>testUser_BookConsultation_waiting_video_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556007294219</td><td class="numi">164537</td></tr><tr class="passedodd"><td><a href="#m69"><b>testUser_BookConsultation_schedule_video_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556007458780</td><td class="numi">164015</td></tr><tr class="passedodd"><td><a href="#m70"><b>testUser_BookConsultation_waiting_video_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556007622821</td><td class="numi">166561</td></tr><tr class="passedodd"><td><a href="#m71"><b>testUser_BookConsultation_schedule_video_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556007789412</td><td class="numi">179008</td></tr><tr class="passedodd"><td><a href="#m72"><b>testUser_BookConsultation_waiting_video_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556007968622</td><td class="numi">158010</td></tr><tr class="passedodd"><td><a href="#m73"><b>testUser_BookConsultation_schedule_audio_allow_doctor</b> (smoke) </a></td><td class="numi">1</td><td>1556008127265</td><td class="numi">163500</td></tr><tr class="passedodd"><td><a href="#m74"><b>testUser_BookConsultation_waiting_audio_allow_doctor</b> (smoke) </a></td><td class="numi">1</td><td>1556008290936</td><td class="numi">148272</td></tr><tr class="passedodd"><td><a href="#m75"><b>testUser_BookConsultation_schedule_audio_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556008439345</td><td class="numi">152910</td></tr><tr class="passedodd"><td><a href="#m76"><b>testUser_BookConsultation_waiting_audio_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556008592286</td><td class="numi">154891</td></tr><tr class="passedodd"><td><a href="#m77"><b>testUser_BookConsultation_schedule_audio_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556008747216</td><td class="numi">158172</td></tr><tr class="passedodd"><td><a href="#m78"><b>testUser_BookConsultation_waiting_audio_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556008905409</td><td class="numi">152082</td></tr><tr class="passedodd"><td><a href="#m79"><b>testUser_BookConsultation_schedule_audio_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556009057526</td><td class="numi">166718</td></tr><tr class="passedodd"><td><a href="#m80"><b>testUser_BookConsultation_waiting_audio_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556009224269</td><td class="numi">157649</td></tr><tr class="passedodd"><td><a href="#m81"><b>testUser_BookConsultation_schedule_audio_telephone_allow_doctor</b> (smoke) </a></td><td class="numi">1</td><td>1556009381949</td><td class="numi">144750</td></tr><tr class="passedodd"><td><a href="#m82"><b>testUser_BookConsultation_waiting_audio_telephone_allow_doctor</b> (smoke) </a></td><td class="numi">1</td><td>1556009526768</td><td class="numi">143746</td></tr><tr class="passedodd"><td><a href="#m83"><b>testUser_BookConsultation_schedule_audio_telephone_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556009670537</td><td class="numi">162933</td></tr><tr class="passedodd"><td><a href="#m84"><b>testUser_BookConsultation_waiting_audio_telephone_allow_doctor_note</b> (smoke) </a></td><td class="numi">1</td><td>1556009833646</td><td class="numi">155499</td></tr><tr class="passedodd"><td><a href="#m85"><b>testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556009989173</td><td class="numi">155635</td></tr><tr class="passedodd"><td><a href="#m86"><b>testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file</b> (smoke) </a></td><td class="numi">1</td><td>1556010144871</td><td class="numi">149618</td></tr><tr class="passedodd"><td><a href="#m87"><b>testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556010294701</td><td class="numi">154506</td></tr><tr class="passedodd"><td><a href="#m88"><b>testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file_note</b> (smoke) </a></td><td class="numi">1</td><td>1556010449234</td><td class="numi">162049</td></tr>
+</table>
+<h1>DocOnline Web Automation  Test Suit</h1>
+<h2 id="m1">Scenario_Component.Scenario_Login:testUser_Login3_Valid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using valid Mobile and Password, Script_name=ValidLogin2, Username=9.740224293E9, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;Doconlines-Mac-mini.local&apos;, ip: &apos;fe80:0:0:0:142c:3a0e:584e:7fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/2b/q7hs5rz1065...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58049}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 5a0e6b9c5fed08f3c76d5135b62e8fbd
+*** Element info: {Using=xpath, value=//div[@class=&apos;user-sidebar-small&apos;]//li[@id=&apos;lnkUserSdbrToSettings&apos;]//*[@class=&apos;svg-icon svg-fill&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at Generic_Component.Base_Class.Explicit_wait(Base_Class.java:79)
+<br/>at Scenario_Component.Scenario_Login.testUser_Login3_Valid(Scenario_Login.java:470)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using invalid Mobile number and invalid Password, Script_name=InValidLogin, Username=9.740224293E9, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=4.0, Error_Message 2=, Password=DocOnline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor, Note &amp; Waiting, Script_name=BookConsultation_Waiting_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Note and Allow Doctor by Waiting, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language &amp; Waiting, Script_name=BookConsultation_Waiting_Audio_Telephone_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Upload &amp; Schedule, Script_name=BookConsultation_Schedule_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_allowdoctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor &amp; Schedule, Script_name=BookConsultation_Schedule_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Upload, Note &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Schedule, Language, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Scenario_Component.Scenario_Login:testUser_Login_UI</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Verifying all the UI Elements on the Login Screen, Script_name=LoginUI, Username=matamjaswanth@gmail.com, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Note &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Schedule, Language, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using invalid Email and invalid Password, Script_name=InValidLogin, Username=matamjaswanth@doconline.com, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=3.0, Error_Message 2=, Password=DocOnline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio and scheduling, Script_name=BookConsultation_Schedule_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using invalid MRN and valid Password, Script_name=InValidLogin, Username=356A01B1D, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=7.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language &amp; Schedule, Script_name=BookConsultation_Schedule_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_file_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, scheduling and File, Script_name=BookConsultation_Schedule_File_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Upload &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Note &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Waiting, Allow Doctor, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_uploadfile</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation by only scheduling and uploading a file, Script_name=BookConsultation_Schedule_upload, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waitingtime_upload</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a Consultation through waiting time and uploading a file, Script_name=BookConsultation_Waiting_Upload, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Upload  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Upload &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waitingtime_notes</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a Consultation through waiting time with notes added, Script_name=BookConsultation_Waiting_Notes, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Testing Booking 2, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Upload &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_file_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Waiting Room and File, Script_name=BookConsultation_Waiting_File_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using invalid MRN and invalid Password, Script_name=InValidLogin, Username=356A01B1D, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=5.0, Error_Message 2=, Password=DocOnline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using valid Email and invalid Password, Script_name=InValidLogin, Username=matamjaswanth@gmail.com, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=2.0, Error_Message 2=, Password=DocOnline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_note_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Waiting Time and a Note, Script_name=BookConsultation_Waiting_Note_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test [Waiting, Note &amp; Audio], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waitingtime_note_upload</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation by Waiting time, adding notes &amp; uploading a file, Script_name=BookConsultation_Waiting_Note_Upload, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with waiting time, note and file, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Waiting, Allow Doctor, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Upload &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Note &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Schedule, Language, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_allow_doctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_note_file_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, File, Note &amp; Waiting Room, Script_name=BookConsultation_Waiting_File_Note_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test [Note, File, Audio, Waiting], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">Scenario_Component.Scenario_Login:InvalidUN_Emptypassword</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using Valid Username and Empty Password, Script_name=InValidLogin_EmptyPassword, Username=matamjaswanth@doconline.com, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=Password field is required., Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_telephone_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language &amp; Waiting, Script_name=BookConsultation_Waiting_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waitingtime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a Consultation through waiting time, Script_name=BookConsultation_Functional, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_telephone_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone &amp; Waiting Room, Script_name=BookConsultation_Waiting_Audio_Telephone, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor, Note &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Schedule, Allow Doctor, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor, Upload, Note &amp; Schedule, Script_name=BookConsultation_Schedule_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with File, Note and Allow Doctor by scheduling, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_allow_doctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor &amp; Waiting, Script_name=BookConsultation_Waiting_Audio_Telephone_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">Scenario_Component.Scenario_Login:testUser_Login1_Valid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using valid Email and Password, Script_name=ValidLogin, Username=matamjaswanth@gmail.com, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_note_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, scheduling and a Note, Script_name=BookConsultation_Schedule_Note_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test [Schedule, Note &amp; Audio], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Note &amp; Waiting, Script_name=BookConsultation_Waiting_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Note and Language by Waiting, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation by only scheduling, Script_name=BookConsultation_Schedule, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_allow_doctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor &amp; Waiting, Script_name=BookConsultation_Waiting_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Note &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Waiting, Language, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor, Upload &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Upload, Note &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Schedule, Allow Doctor, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor, Upload, Note &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Schedule, Allow Doctor, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_telephone_audio_File_Note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, File, Note &amp; Waiting, Script_name=BookConsultation_Waiting_Audio_Telephone_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Waiting, Telephone, File and Notes, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Waiting_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with File, Note and Language by Waiting, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">Scenario_Component.Scenario_CheckURLs:testurl_User</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=https://staging.doconline.com/user#/, TC_ID=PageTitle_User, Script_name=PageTitle_User, Username=matamjaswanth@gmail.com, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">Scenario_Component.Scenario_Login:testUser_Login2_Valid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using valid MRN and Password, Script_name=ValidLogin1, Username=356A01B055, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_note_upload</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation by scheduling, adding notes &amp; uploading a file, Script_name=BookConsultation_Schedule_Note_Upload, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with note and file, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">Scenario_Component.Scenario_Dashboard:testUser_Dashboard_UI</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Dashboard_Title=DocOnline, =, Execute_Flag=Y, Book_Consultation_Tile_Description=Your Time. Your Convenience.
+No more waiting to visit a doctor! 
+Book a Consultation as per your convenience!, TC_ID=Dashboard Screen- Check the visibility of UI elements , Script_name=DashboardUI, Username=matamjaswanth@gmail.com, Order_Set=1.0, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using valid MRN and invalid Password, Script_name=InValidLogin, Username=356A01B055, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=6.0, Error_Message 2=, Password=DocOnline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">Scenario_Component.Scenario_BookConsultation:testUser_BookConsultation_UI</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, TC_ID=Book a Consultation Screen- Check the visibility of UI elements , Script_name=BookConsultationUI, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio,Allow doctor, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Waiting, Allow Doctor, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_telephone_audio_Notes</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Notes &amp; Waiting Room, Script_name=BookConsultation_Waiting_Audio_Telephone_Notes, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Waiting, Telephone and Notes, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, waiting,  Allow Doctor, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_allow_doctor_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Waiting_Allowdoctor_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with File, Note and Allow Doctor by Waiting, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor, Note &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Schedule, Allow Doctor, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_Functionality</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation by scheduling with notes added, Script_name=BookConsultation_Functionality, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=It is an Test Booking, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Note &amp; Schedule, Script_name=BookConsultation_Schedule_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Note and Language by scheduling, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Upload, Note &amp; Schedule, Script_name=BookConsultation_Schedule_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with File, Note and Language by scheduling, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_allow_doctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Allow doctor &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_lang</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Language, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_telephone_audio_File</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, File &amp; Waiting Room, Script_name=BookConsultation_Waiting_Audio_Telephone_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_allow_doctor_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Video,  Allow doctor, Note &amp; Schedule, Script_name=BookConsultation_Schedule_Allowdoctor_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Note and Allow Doctor by scheduling, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_allow_doctor</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio,  Allow doctor &amp; Schedule, Script_name=BookConsultation_Audio_Schedule_Allowdoctor, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio and Waiting, Script_name=BookConsultation_Waiting_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Allow doctor, Upload  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_video_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor, Upload &amp; Schedule, Script_name=BookConsultation_Schedule_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Waiting, Language, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">Scenario_Component.Scenario_Login:testUser_Login_InValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=, TC_ID=Login using invalid Email and valid Password, Script_name=InValidLogin, Username=matamjaswanth@doconline.com, Error_Message=These credentials do not match our records., Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_file_note_audio</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, File, Note &amp; scheduling , Script_name=BookConsultation_Schedule_File_Note_Audio, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test [Note, File, Audio, Schedule], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">Scenario_Component.Scenario_Login:testUser_page_title</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{=, Execute_Flag=Y, Base_Url=https://staging.doconline.com/user#/, TC_ID=PageTitle_User, Script_name=PageTitle_User, Username=matamjaswanth@gmail.com, Error_Message=, Error_Message 1=, Order_Set=1.0, Error_Message 2=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_lang_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Language, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Waiting_Language_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Waiting, Language, Note], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m81">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_allow_doctor_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Allow doctor, Upload  &amp; Waiting, Script_name=BookConsultation_Waiting_Allowdoctor_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_audio_telephone_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Upload, Note  &amp; Waiting, Script_name=BookConsultation_Audio_Telephone_Waiting_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, waiting, Language, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_lang_file_note</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Upload, Note &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Language_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with [Audio, Telephone, Schedule, Language, Note, File], Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_telephone_audio_upload_notes</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, File, Note &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone_File_Note, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Schedule, Telephone, File and Notes, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_waiting_video_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Video, Language, Upload  &amp; Waiting, Script_name=BookConsultation_Waiting_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_telephone_audio_notes</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Notes &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone_Notes, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=Test with Schedule, Telephone and Notes, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_audio_telephone_lang_file</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, Language, Upload &amp; Schedule, Script_name=BookConsultation_Audio_Telephone_Schedule_Language_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">Scenario_Component.Scenario_BookConsultation_Functionality:testUser_BookConsultation_schedule_telephone_audio_upload</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Path=/Users/doconline_testing/Desktop/Web/bullet_point.png, =, Execute_Flag=Y, TC_ID=Book a consultation through Audio, Telephone, File &amp; Schedule, Script_name=BookConsultation_Schedule_Audio_Telephone_File, Username=matamjaswanth@gmail.com, BookConsultation_Screen_Title=DocOnline, Order_Set=1.0, Notes=, Password=Doconline@123}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

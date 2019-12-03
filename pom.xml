@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DocOnline_Web_Automation</groupId>
+  <artifactId>DocOnline_Web_Automation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  
+  <!-- Adding Core Selenium jar files -->
+  
+  <dependency>
+  	<groupId>org.seleniumhq.selenium</groupId>
+  	<artifactId>selenium-java</artifactId>
+  	<version>3.13.0</version>
+  </dependency>
+  
+  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-chrome-driver</artifactId>
+    	<version>3.141.59</version>
+	</dependency>
+	
+	
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-ie-driver</artifactId>
+    	<version>3.141.59</version>
+	</dependency>
+  
+  
+  <!-- Adding TestNG jar file -->
+  
+  <dependency>
+  	<groupId>org.testng</groupId>
+  	<artifactId>testng</artifactId>
+  	<version>6.8</version>
+  </dependency>
+  
+  <!-- XML APIs  -->
+  
+  <dependency>
+  	<groupId>xml-apis</groupId>
+  	<artifactId>xml-apis</artifactId>
+  	<version>1.4.01</version>
+  </dependency>
+  
+  <!-- Apache POI for reading and writing into Excel sheet -->
+  
+  <dependency>
+  	<groupId>org.apache.poi</groupId>
+  	<artifactId>poi-ooxml</artifactId>
+  	<version>3.13-beta1</version>
+  </dependency>
+  
+  
+  <!-- Adding reportNG jar files -->
+  
+  <dependency>
+  	<groupId>org.uncommons</groupId>
+  	<artifactId>reportng</artifactId>
+  	<version>1.1.2</version>
+  	<scope>test</scope>
+  		<exclusions>
+  			<exclusion>
+  				<groupId>org.testng</groupId>
+  				<artifactId>testng</artifactId>
+  			</exclusion>
+  		</exclusions>
+  </dependency>
+  
+  
+  <!-- Google injector for html -->
+  
+  <dependency>
+  <groupId>com.google.inject</groupId>
+  <artifactId>guice</artifactId>
+  <version>3.0</version>
+  </dependency>
+  
+  
+  <!-- Log4j for logs -->
+  
+  <dependency>
+  	<groupId>log4j</groupId>
+  	<artifactId>log4j</artifactId>
+  	<version>1.2.17</version>
+  </dependency>
+  
+  <!-- extent reports for reporting -->
+  
+  <dependency>
+  <groupId>com.relevantcodes</groupId>
+  <artifactId>extentreports</artifactId>
+  <version>2.41.0</version>
+  </dependency>
+  
+  <!-- Adding chrome driver dependency -->
+  <dependency>
+	<groupId>org.seleniumhq.selenium</groupId>
+	<artifactId>selenium-chrome-driver</artifactId>
+	<version>2.50.0</version>
+  </dependency>
+  
+  
+  </dependencies>
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
