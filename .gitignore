@@ -18,3 +18,5 @@ Test/\.settings/
 
 WebAutomation/\.settings/
 WebAutomation/test-output/
+/.metadata/
+/.recommenders/
